@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  box-shadow: 0 0 5px 2px #02000021;
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  padding: 0.4rem;
+  flex-direction: column;
+  width: 500px;
+  gap: 0.4rem;
+  margin-inline: 0.5rem;
+} 
+
+input {
+  margin-block: 0.4rem;
+  padding: 0.2rem;
+  height: 2rem;
+} 
+
+input:invalid {
+  box-shadow: 0 0 5px 1px #02000021
+}
+
+.form-btn {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(252, 129, 48);
+}

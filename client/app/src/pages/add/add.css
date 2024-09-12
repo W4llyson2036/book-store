@@ -1,0 +1,7 @@
+.section-add-new-book {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(183, 162, 204, 0.644);
+}

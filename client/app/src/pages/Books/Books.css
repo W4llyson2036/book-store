@@ -1,0 +1,90 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.grid--section-item-book {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  margin-block: 1rem;
+}
+
+.none-book-added {
+  font-size: 2rem;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(199, 199, 199);
+  box-shadow: rgba(0, 0, 0, 0.507) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  position: relative;
+}
+
+.book-img {
+  height: 150px;
+  background-color: rebeccapurple;
+}
+.book-img img {
+  width: 100%; 
+  object-fit: cover; 
+}
+
+.book-info { 
+  height: 120px;
+  position: relative;
+  padding: 0.5rem; 
+}
+
+.book-title {
+  font-size: 1.2rem;
+}
+
+.book-description {
+  overflow: hidden;
+  word-break: break-all;
+  height: 2.5rem;
+  margin: auto;
+}
+
+.book-price {
+  display: flex;
+}
+
+.btn-add {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  background-color: rgb(90, 151, 32);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 41.875rem) {
+  .grid--section-item-book {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media screen and (max-width: 28.125rem) {
+  .grid--section-item-book {
+    margin-inline: 1rem;
+    grid-template-columns: minmax(200px, 400px);
+  }
+}

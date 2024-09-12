@@ -1,0 +1,42 @@
+.box-book-options button {
+  height: 22px;
+  padding: 0.2rem;
+}
+
+.icon {
+  width: 40px;
+  height: 100%;
+  fill: red;
+}
+
+.box-book-options {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.drop {
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(109, 109, 109);
+  
+  animation: drop 0.5s forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-20px); 
+    opacity: 0; 
+  }
+  
+  50% {
+    transform: translateX(-4px); 
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
